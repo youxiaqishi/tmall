@@ -1,0 +1,34 @@
+{
+  "name": "tmall",
+  "version": "1.0.0",
+  "description": "tmall代码",
+  "main": "index.js",
+  "scripts": {
+    "start": "WEBPACK_ENV=dev webpack-dev-server --inline --port 8088",
+    "start_win": "set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8088",
+    "dist": "WEBPACK_ENV=online webpack -p",
+    "dist_win": "set WEBPACK_ENV=online && webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youxiaqishi/tmall.git"
+  },
+  "author": "chenrui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/youxiaqishi/tmall/issues"
+  },
+  "homepage": "https://github.com/youxiaqishi/tmall#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.11.2",
+    "html-loader": "^0.4.5",
+    "html-webpack-plugin": "^2.29.0",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^1.15.0",
+    "webpack-dev-server": "^1.16.5"
+  },
+  "dependencies": {}
+}
