@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-  <%= require('html-loader!./layout/html-head.html')%>
+  <%= require('html-loader!./layout/head-common.html')%>
+  <title>tmall电商平台</title>
 </head>
 <body>
-   hello world
-
-    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <%= require('html-loader!./layout/nav.html')%>
+  <%= require('html-loader!./layout/header.html')%>
+  <div class="page-wrap w">
+    <%= require('html-loader!./layout/nav-side.html')%>
+  	<div class="content with-nav">test</div>
+  </div>
+  <%= require('html-loader!./layout/footer.html')%>
 </body>
 </html>
