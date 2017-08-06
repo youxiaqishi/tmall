@@ -1,0 +1,17 @@
+/*
+* @Author: Administrator
+* @Date:   2017-08-05 10:59:56
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-08-05 12:31:33
+*/
+
+.form-line{
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+}
+.form-line .label{
+	display: inline-block;
+	width: 60px;
+	text-align: right;
+}

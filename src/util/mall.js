@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-07-30 08:41:52
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-30 10:31:45
+* @Last Modified time: 2017-08-05 18:47:45
 */
 var Hogan = require('hogan.js');
 var conf = {
@@ -54,10 +54,10 @@ var _mall = {
 	},
 	// 错误提示
 	errorTips : function(msg){
-		alert(msg || '好像不对');
+		// alert(msg || '好像不对');
 	},
 	//字段的验证，支持非、手机、邮箱的判断
-	validata : function(value, type){
+	validata : function(value, type){ 
         var value = $.trim(value);
         // 非空验证
         if('require' === type){
@@ -74,7 +74,7 @@ var _mall = {
 	},
 	// 统一登录
 	doLogin : function(){
-		window.location.href = './login.html?redirect='+encodeURIComponent(window.location.href);
+		window.location.href = './user-login.html?redirect='+encodeURIComponent(window.location.href);
 	},
 	goHome : function(){
 		window.location.href = './index.html';

@@ -18,10 +18,15 @@ var getHtmlConfig = function(name, title){
 //webpack config文件
 var config = {
     entry: {
-      'result': ['./src/page/result/index.js'],
-    	'common': ['./src/page/commons/index.js'],
-    	'index' : ['./src/page/index/index.js'],
-    	'login' : ['./src/page/login/index.js']
+      'result'             : ['./src/page/result/index.js'],
+    	'common'             : ['./src/page/commons/index.js'],
+    	'index'              : ['./src/page/index/index.js'],
+    	'user-login'         : ['./src/page/user-login/index.js'],
+      'user-register'      : ['./src/page/user-register/index.js'],
+      'user-center'        : ['./src/page/user-center/index.js'],
+      'user-center-update' : ['./src/page/user-center-update/index.js'],
+      'user-pass-update' : ['./src/page/user-pass-update/index.js'],
+      'user-pass-reset'    : ['./src/page/user-pass-reset/index.js']
     },
     output: {
         path: "./dist",
@@ -68,7 +73,12 @@ var config = {
       new ExtractTextPlugin("css/[name].css"),
       //html模板处理
       new HtmlWebpackPlugin(getHtmlConfig('index', '首页')),
-      new HtmlWebpackPlugin(getHtmlConfig('login', '用户登录')),
+      new HtmlWebpackPlugin(getHtmlConfig('user-login', '用户登录')),
+      new HtmlWebpackPlugin(getHtmlConfig('user-register', '用户注册')),
+      new HtmlWebpackPlugin(getHtmlConfig('user-pass-reset', '重置密码')),
+      new HtmlWebpackPlugin(getHtmlConfig('user-center', '个人中心')),
+      new HtmlWebpackPlugin(getHtmlConfig('user-center-update', '个人信息修改')),
+      new HtmlWebpackPlugin(getHtmlConfig('user-pass-update', '密码修改')),
       new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果'))
 
     ]

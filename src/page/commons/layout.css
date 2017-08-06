@@ -2,10 +2,10 @@
 * @Author: Administrator
 * @Date:   2017-07-30 10:35:00
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-30 11:11:36
+* @Last Modified time: 2017-08-05 13:17:01
 */
 /* css reset */
-html, body, div, ul, li{
+html, body, div, ul, li, i, label, input,p{
 	margin: 0;
 	padding: 0;
 }
@@ -52,6 +52,9 @@ input[type='checkbox']{
 	color: #999;
 	text-decoration: none;
 }
+.fl{
+	float: left;
+}
 /* btn */
 .btn{
 	display: inline-block;
@@ -84,4 +87,23 @@ input[type='checkbox']{
     border-radius: 5px;
     background: url(../../image/icon/loading.gif) no-repeat;
     opacity: .6;
+}
+
+/*panel*/
+.panel{
+	width: 900px;
+	padding: 10px;
+	margin-bottom: 10px;
+	background: #fff;
+}
+.panel .panel-title{
+	padding: 10px;
+	font-size: 14px;
+	color: #666;
+	font-weight: bold;
+	border-bottom: 1px solid #eee;
+}
+.panel .panel-body{
+	padding: 10px;
+	overflow: hidden;
 }
